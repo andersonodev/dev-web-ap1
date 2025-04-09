@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Configurações básicas da página -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evento X - Home</title>
+
+  <!-- Estilo principal -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Fonte Poppins do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Script JS para funcionalidades da página -->
+  <script src="js/index.js" defer></script>
+</head>
+<body>
+  <!-- Cabeçalho com navegação -->
+  <header>
+    <nav class="nav">
+      <div class="logo">Evento X</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Ícone de menu mobile -->
+      <ul class="nav-links" id="nav-links">
+        <!-- Links de navegação -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção de destaque principal -->
+    <section class="hero">
+      <div class="container">
+        <h1>Descubra Eventos <span class="destaque">Incríveis</span></h1>
+        <p>Encontre e participe dos melhores eventos na sua região</p>
+        
+        <!-- Botões de ação -->
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary">Explorar Eventos</a>
+          <a href="#" class="btn btn-secondary">Criar Evento</a>
+        </div>
+    
+        <!-- Ícones das redes sociais -->
+        <div class="redes-home">
+          <a href="#" aria-label="Facebook">
+            <img src="public/facebook.png" alt="Facebook" />
+          </a>
+          <a href="#" aria-label="Instagram">
+            <img src="public/instagram.png" alt="Instagram" />
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <img src="public/in.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sessão com listagem de eventos -->
+    <section class="container eventos">
+
+      <!-- Coluna da esquerda com eventos em destaque -->
+      <section class="coluna-esquerda">
+        <h2>Eventos em Destaque</h2>
+
+        <!-- Cartão de evento 1 -->
+        <article class="card">
+          <picture>
+            <!-- Imagens em formato moderno (webp) e fallback -->
+            <source srcset="public/imagens/image1.webp" type="image/webp">
+            <source srcset="public/imagens/image1.jpg" type="image/jpeg">
+            <img src="public/imagens/festival.jpg" alt="Festival de Música" onerror="this.onerror=null; this.replaceWith(document.createTextNode('Imagem não disponível'));">
+          </picture>
+          <div class="card-content">
+            <h3>Festival de Música Verão 2025</h3>
+            <p>📅 18-21 Julho, 2025<br>📍 São Paulo, SP</p>
+            <p>atrações internacionais em 4 dias de festa!</p>
+            <a href="#" class="btn btn-info">Saiba mais</a>
+          </div>
+        </article>
+
+        <!-- Cartão de evento 2 -->
+        <article class="card">
+          <picture>
+            <source srcset="public/imagens/image2.webp" type="image/webp">
+            <source srcset="public/imagens/image2.jpg" type="image/jpeg">
+            <img src="public/imagens/tecnologia.jpg" alt="show 2" onerror="this.onerror=null; this.replaceWith(document.createTextNode('Imagem não disponível'));">
+          </picture>
+          <div class="card-content">
+            <h3>show 2</h3>
+            <p>📅 9 Agosto, 2025<br>📍 Rio de Janeiro, RJ</p>
+            <p>show 2.</p>
+            <a href="#" class="btn btn-info">Saiba mais</a>
+          </div>
+        </article>
+
+        <!-- Cartão de evento 3 -->
+        <article class="card">
+          <picture>
+            <source srcset="public/imagens/image3.webp" type="image/webp">
+            <source srcset="public/imagens/image3.jpg" type="image/jpeg">
+            <img src="public/imagens/image3" alt="show 3" onerror="this.onerror=null; this.replaceWith(document.createTextNode('Imagem não disponível'));">
+          </picture>
+          <div class="card-content">
+            <h3>show 3 Internacional</h3>
+            <p>📅 7-9 Setembro, 2025<br>📍 Brasília, DF</p>
+            <p>show 3.</p>
+            <a href="#" class="btn btn-info">Saiba mais</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Coluna da direita com próximos eventos -->
+      <section class="coluna-direita">
+        <h2>Próximos Eventos</h2>
+
+        <!-- Evento 4 -->
+        <article class="card">
+          <picture>
+            <source srcset="public/imagens/image4.webp" type="image/webp">
+            <source srcset="public/imagens/image5.jpg" type="image/jpeg">
+            <img src="public/imagens/arte.jpg" alt="Exposição de Arte Moderna" onerror="this.onerror=null; this.replaceWith(document.createTextNode('Imagem não disponível'));">
+          </picture>
+          <div class="card-content">
+            <h3>Exposição de Arte </h3>
+            <p>📅 20 Outubro, 2025<br>📍 São Paulo, SP</p>
+            <p>Artistas contemporâneos nacionais e internacionais.</p>
+            <a href="#" class="btn btn-info">Saiba mais</a>
+          </div>
+        </article>
+
+        <!-- Evento 5 -->
+        <article class="card">
+          <picture>
+            <source srcset="public/imagens/image5.webp" type="image/webp">
+            <source srcset="public/imagens/image5.jpg" type="image/jpeg">
+            <img src="public/imagens/maratona.jpg" alt="show" onerror="this.onerror=null; this.replaceWith(document.createTextNode('Imagem não disponível'));">
+          </picture>
+          <div class="card-content">
+            <h3>show</h3>
+            <p>📅 17 Novembro, 2025<br>📍 São Paulo, SP</p>
+            <p>Evento 5.</p>
+            <a href="#" class="btn btn-info">Saiba mais</a>
+          </div>
+        </article>
+
+        <!-- Newsletter -->
+        <article class="newsletter">
+          <h3>Fique por dentro!</h3>
+          <p>Assine a newsletter e receba novidades:</p>
+          <form>
+            <input type="email" placeholder="Seu e-mail" required />
+            <button class="btn btn-secondary">Inscrever</button>
+          </form>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Evento X. Todos os direitos reservados.</p>
+    <div class="redes">
+      <a href="#" aria-label="Facebook">
+        <img src="public/facebook.png" alt="Facebook" />
+      </a>
+      <a href="#" aria-label="Instagram">
+        <img src="public/instagram.png" alt="Instagram" />
+      </a>
+      <a href="#" aria-label="LinkedIn">
+        <img src="public/in.png" alt="LinkedIn" />
+      </a>
+    </div>
+  </footer>
+  
+</body>
+</html>
